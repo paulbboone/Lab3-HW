@@ -1,0 +1,158 @@
+html {
+  box-sizing: border-box;
+  margin: 0;
+  height: 100%;
+  background-image: url(../public/img/anh-meo.jpg);
+  font-family: ShoCard, Arial, sans-serif;
+  font-size: 1em;
+  background-repeat: no-repeat;
+  background-position: center center; 
+
+  background-size:contain; 
+}
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  user-select: none;
+}
+
+#drumkit {
+  display: flex;
+  align-items: center;
+  align-content: space-around;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+  height: 70%;
+}
+
+@media screen and (min-width: 900px) {
+  #drumkit {
+    align-content: center;
+  }
+}
+
+.button {
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  transition: all 0.05s;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.playing {
+  transform: scale(0.98);
+  background-image: radial-gradient(
+    rgba(255, 255, 255, 1) 60%,
+    rgba(255, 255, 255, 0.65) 62%,
+    rgba(255, 255, 255, 0.5) 66%,
+    rgba(255, 255, 255, 0.2) 67%,
+    rgba(255, 255, 255, 0.03) 70%,
+    rgba(255, 255, 255, 0) 73%
+  );
+}
+
+img {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 91%;
+  height: 91%;
+}
+
+h3 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(0%);
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: rgba(240, 240, 240, 0.7);
+}
+
+.dark-text {
+  color: rgba(118, 108, 66, 0.44);
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.button:nth-child(1) {
+  width: 20vw;
+  height: 20vw;
+  left: 9%;
+  top: 2vw;
+  z-index: 3;
+}
+
+.button:nth-child(2) {
+  width: 14.5vw;
+  height: 14.5vw;
+  z-index: 2;
+  left: 1%;
+}
+
+.button:nth-child(3) {
+  width: 14vw;
+  height: 14vw;
+  left: -4.5%;
+  z-index: 2;
+}
+
+.button:nth-child(4) {
+  width: 22vw;
+  height: 22vw;
+  left: -12%;
+  top: 2vw;
+  z-index: 3;
+}
+
+.button:nth-child(5) {
+  width: 17vw;
+  height: 17vw;
+  left: 2%;
+  top: -1vw;
+  z-index: 3;
+}
+
+.button:nth-child(6) {
+  width: 16vw;
+  height: 16vw;
+  left: -5%;
+  top: -5vw;
+  z-index: 2;
+}
+
+.button:nth-child(7) {
+  width: 26vw;
+  height: 26vw;
+  left: -11.5%;
+  top: -8vw;
+  z-index: 1;
+}
+
+.button:nth-child(8) {
+  width: 20vw;
+  height: 20vw;
+  left: -19%;
+  top: -4vw;
+  z-index: 1;
+}
